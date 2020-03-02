@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Header {
+  background-color: rgb(100, 100, 209);
+  text-align: center;
+  font-size: 50px;
+  padding: 1px;
+  padding-top: 0px;
+}
+
+.ExerciseBlock {
+  margin: 10px;
+  padding: 5px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  width: 100%;
+  font: 200px;
+  z-index: 0;
+}
+
+.panel {
+  position: sticky;
+  /*position: fixed;*/
+  background-color: rgb(100, 100, 209);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blockOptions {
+  font-size: 30px;
+  z-index: 1;
+  position: absolute;
+  padding: 20px;
+}
+
+.selectbox {
+  font-size: 20;
+  vertical-align: bottom;
+}
+
+.IntroductionSection {
+  background-color: white;
+  color: black;
+  padding: 0%;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 20px;
+}
