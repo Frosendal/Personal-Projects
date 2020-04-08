@@ -1,3 +1,15 @@
+<div *ngFor="let recipe of Recipes">
+  <h1>{{ recipe.title }}</h1>
+  <p>Ingredients:</p>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">
+      <app-item [Name]="ingredient.name" [Quantity]="ingredient.quantity">
+      </app-item>
+    </li>
+  </ul>
 
-
-<app-item [name]='Flour'></app-item>
+  <p>
+    Method: <br />
+    {{ recipe.method }}
+  </p>
+</div>

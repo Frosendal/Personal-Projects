@@ -1,20 +1,21 @@
-import { ItemComponent } from './../item/item.component';
-import { Component, OnInit } from '@angular/core';
+import { MockRecipeService } from "./../mock-recipe.service";
+import { ItemComponent } from "./../item/item.component";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-recipe',
-  templateUrl: './recipe.component.html',
-  styleUrls: ['./recipe.component.css']
+  selector: "app-recipe",
+  templateUrl: "./recipe.component.html",
+  styleUrls: ["./recipe.component.css"],
 })
 export class RecipeComponent implements OnInit {
-
-
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(mockRecipeService: MockRecipeService) {
+    this.Recipes = mockRecipeService.getRecipes();
   }
 
-  recipeItem : Array<Object> = [new {"Flour", "500g"}];
+  Recipes;
 
+  @Input() Title: string;
+  @Input() Method: string;
+
+  ngOnInit(): void {}
 }
