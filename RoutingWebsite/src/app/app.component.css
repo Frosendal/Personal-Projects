@@ -1,0 +1,11 @@
+.navbar {
+  font-size: xx-large;
+  text-decoration-line: none;
+  text-decoration: none;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2vh;
+  margin-bottom: 8vh;
+}

@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () =>
       import("./about/about.module").then((m) => m.AboutModule),
   },
+  {
+    path: "Tech",
+    loadChildren: () => import("./tech/tech.module").then((m) => m.TechModule),
+  },
 ];
 
 @NgModule({

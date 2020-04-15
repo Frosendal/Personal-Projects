@@ -1,0 +1,46 @@
+h3 {
+  font-size: x-large;
+}
+
+.oppposingItem {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+
+.opposing {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2vh;
+  width: 100vw;
+}
+
+p {
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 6vh;
+}
+
+h3 {
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+button {
+  background-color: lightskyblue;
+  padding: 10px;
+  margin-bottom: 10vh;
+  font-size: x-large;
+}
