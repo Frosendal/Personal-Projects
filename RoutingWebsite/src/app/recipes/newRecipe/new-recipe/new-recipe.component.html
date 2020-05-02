@@ -1,1 +1,30 @@
-<input type="text" name="inputName" required [(ngModel)]="name" /> {{ name }}
+
+<form
+    #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)" 
+>
+<fieldset ngModelGroup="newRecipe">
+    <input 
+type="text" 
+required 
+name="Name"
+/>
+<input
+type="text"
+required
+name="Introduction"
+/>
+<input
+type="text"
+required
+name="Method"
+/>
+<input
+type="text"
+required
+name="Items"
+/>
+</fieldset>
+<button type="submit">Submit</button>
+</form>
+{{formRef.value | json}}
+

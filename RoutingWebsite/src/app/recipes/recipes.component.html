@@ -1,10 +1,22 @@
-<p>Recipe</p>
-<button (click)="GetRecipes()">Get recipes</button>
-<Button (click)="AddRecipe()">Add a recipe</Button>
 <div>
-  <ul>
-    <li *ngFor="let recipe of recipes">
-      {{ recipe.title }}
-    </li>
-  </ul>
+  <p id="pageIntroduction">Here you can browse the variety of recipes found in the Splitlist-app. However, you can also contribute by adding recipes of your own! Inspire by adding creative and tasty
+    recipes while saving the environment by minimizing food waste. 
+  </p>
+</div>
+<h1 id="pageTitle">Splitlist Recipes</h1>
+<div class="centerButton">
+  <Button id="addBtn" (click)="AddRecipe()">Add a recipe</Button>
+</div>
+<div class="recipes">
+  <div class="recipe" *ngFor="let recipe of recipes">
+    <h4 id="recipeTitle">{{recipe.name}}</h4>
+    <p id="recipeIntroduction">{{recipe.introduction}}</p>
+    <ul>
+      <li *ngFor="let item of recipe.items" >{{item.amount}} of {{item.name}}</li>
+    </ul>
+    <p id="recipeMethod">{{recipe.method}}</p>
+  </div>
+</div>
+<div class="centerButton">
+  <button id="loadBtn" (click)="GetRecipes()">Load more recipes</button>
 </div>

@@ -1,5 +1,9 @@
+import { Item } from './item.model';
+
 export interface Recipe {
-  title: string;
-  ingredients: string[];
-  id: number;
+  items: Item[];
+  modelId: number;
+  name: string;
+  introduction: string;
+  method: string;
 }

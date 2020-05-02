@@ -11,12 +11,20 @@ import { FormsModule } from "@angular/forms";
 export class NewRecipeComponent {
   constructor(
     public dialogRef: MatDialogRef<NewRecipeComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
+    @Inject(MAT_DIALOG_DATA) public data: Recipe
   ) {}
 
-  name: string = "Hello";
+  newRecipe: Recipe;
 
   onNoClick(): void {
     this.dialogRef.close();
   }
+
+  onSubmit(formvalue){
+    console.log(formvalue);
+    this.data = formvalue;
+    this.dialogRef.close();
+  }
+
+
 }

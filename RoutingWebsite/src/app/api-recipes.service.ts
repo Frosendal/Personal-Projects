@@ -10,6 +10,6 @@ export class APIRecipesService {
 
   getRecipes(): Observable<Object> {
     // const obs = new Observable<{title: string}[]>([{title: 'recipe 1'}])
-    return this.http.get("http://dummy.restapiexample.com/api/v1/employee/1");
+    return this.http.get("https://splitlistwebapi.azurewebsites.net/api/Recipes/1");
   }
 }
