@@ -1,4 +1,10 @@
 <p>Recipe</p>
-<button (click)="getRecipes()">Get recipes</button>
-<button (click)="newRecipe()">Create New Recipe</button>
-<p>{{ recipes }}</p>
+<button (click)="GetRecipes()">Get recipes</button>
+<Button (click)="AddRecipe()">Add a recipe</Button>
+<div>
+  <ul>
+    <li *ngFor="let recipe of recipes">
+      {{ recipe.title }}
+    </li>
+  </ul>
+</div>
